@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lázaro Belloch Canet">
+    <title>CV_LázaroBelloch</title>
+    <link href="../public/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="../public/icons/emojiHeartEyes.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>Currículum Vitae</h1>
+        <br>
+        <hr>
+    </header>
+
+    <main>
+        <div class="container ">
+            <div class="profile">
+                <img src="../public/images/fotoCV.jpg" alt="Foto de perfil" class="foto">
+                <h2>Lázaro Belloch Canet</h2>
+                <p>Técnico de sistemas informáticos</p>
+            </div>
+            <div class="sobreMi center">
+                <p>Mi nombre es Lázaro. Soy una persona empática. Muy resolutiva, con mucha capacidad para buscar
+                    soluciones a problemas nuevos.
+                    Aficionado a la informática, desde siempre he resuelto los problemas que me surgían yo mismo. Windows
+                    95 fué el primer SO que conocí. Actualmente uso tanto Windows como Linux, 
+                    Mac lo conozco por que en mi entorno laboral mucha gente lo usa y tengo la necesidad de dar soluciones rápidas a ciertas incidencias. 
+                    En cuanto a SO del lado del servidor Windows Server 2019 con AD y servidor de datos lo he trabajdo durante 3 años, 
+                    ahora hemos actualizado a 2022. Ubuntu server es que suelo usar para alojar aplicaciones propias o de codigo abierto, Docker es nuestro comodín
+                    para ciertas aplicaciones como Odoo.
+                </p>
+            </div>
+        </div>
+
+        <table >
+            <tr>
+                <th>Fechas/Duración</th>
+                <th>Entidad</th>
+                <th>Experiencia</th>
+            </tr>
+            <tr>
+                <td>2021-2024</td>
+                <td><a href="https://www.uv.es/fundacion-lluis-alcanyis/es/fundacion-lluis-alcanyis-universitat-valencia.html"
+                        target="_blank">
+                        <img src="../public/icons/buildings.svg" atl="Icono entidad"></a> Fundació Lluís Alcanyís
+
+                </td>
+                <td>
+                    <ul>
+                        <li>Técnico en sistemas informáticos</li>
+                        <li>3 Años en administración de Active Directory</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>2022-2023</td>
+                <td><a href="https://www.coursera.org/professional-certificates/google-cybersecurity"
+                        target="_blank">
+                        <img src="../public/icons/award.svg" atl="Icono certificado">
+                    </a>Becas Google Fundae Sepe</td>
+                    <!-- Por más que reviso no sé por qué sale el _ delante de Becas -->
+                <td>
+                    <ul>
+                        <li>Certificación en ciberseguridad
+                            <br>
+                            <a href="https://www.coursera.org/account/accomplishments/specialization/Z29FEJPJP7R6"
+                                class="Certificado Ciberseguridad" target="_blank">Descargar Cert.</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <a href="../public/documents/CVLazaroBellochCanet.pdf" class="download-btn"  download target="_blank"><img src="../public/icons/fileTypePdf.svg"
+                atl="Icono PDF"><br><br>Enlace de descarga CV</a>
+    </main>
+
+    <footer>
+        <div>
+            <form>
+
+                <label for="nombre">Nombre y Apellidos</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <input type="submit" value="Enviar"  formaction="mailto:bellochlazaro.smr@gmail.com">
+            </form>
+                <!-- Para procesar el envío del formulario como he entendido el ejercicio debería utilizarse el metodo post 
+                    y hacerlo desde el lado del servidor con un lenguaje de servidor como php o nodejs
+
+                    <form action="procesar_formulario.php" method="post"></form> 
+                        <label for="nombre">Nombre y Apellidos</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>    
+                        <input type="submit" value="Enviar">
+                    </form>
+                En el archivo procesar_formulario.php que hace el envío al lado del servidor para procesarlo...
+
+                <?php
+                    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                        $nombre = $_POST["nombre"];
+                        $email = $_POST["email"];
+                        $mensaje = $_POST["mensaje"];
+                        
+                        $destinatario = "bellochlazaro.smr@gmail.com";
+                        $asunto = "Nuevo mensaje del formulario de contacto";
+                        
+                        $cuerpo = "Nombre: $nombre\n";
+                        $cuerpo .= "Email: $email\n";
+                        $cuerpo .= "Mensaje:\n$mensaje";
+                        
+                        mail($destinatario, $asunto, $cuerpo);
+                        
+                        // Redireccionar a una página de confirmación o mostrar un mensaje de éxito
+                        header("Location: confirmacion.html");
+                        exit();
+                    }
+                ?>
+                -->            
+        </div>
+
+        <div>
+            <p>Copyright © 2024 Designed by Lázaro Belloch Canet. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

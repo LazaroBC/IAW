@@ -1,0 +1,173 @@
+:root {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --text-primary: #333333D9;
+    --text-secondary: #ececec;
+    --background: #f8f8f8;
+    --bg-primary: #4d4d4d;
+    --bg-secondary: #fc0;
+}
+
+html,
+body {
+    color: var(--text-primary);
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    outline: none !important;
+}
+
+header,
+main,
+footer {
+    padding: 20px;
+    /*Lo siento, me niego a quitar este padding*/
+    text-align: center;
+}
+
+/* Contenedor principal */
+.container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 20px;
+}
+
+/* Cuadrícula izquierda */
+.profile {
+    text-align: center;
+}
+
+/* Cuadrícula derecha */
+.sobreMi {
+    text-align: justify;
+    margin-right: 50px;
+}
+
+/* Tabla de experiencia */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #0e0d0d;
+}
+
+th,
+td {
+    padding: 15px; /*Lo siento, me niego a quitar este padding*/
+    text-align: left;
+}
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2; 
+}
+
+tr:nth-child(even) {
+    background-color: #ddd; 
+}
+/* Botón de descarga */
+.download-btn {
+    display: inline-block;
+    background-color: #df1b1b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.download-btn img {
+    width: 5em;
+}
+
+/* Pie de página */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 10px; /*Lo siento, me niego a quitar este padding*/
+}
+
+input[type="submit"] {
+    background-color: #4caf89;
+    color: white;
+    cursor: pointer;
+}
+
+/* Foto cabecera */
+
+.foto {
+    max-width: 25%;
+    border: 3px solid rgb(117, 115, 115);
+    border-radius: 20%;
+    box-shadow: 5px 5px 5px rgba(56, 56, 80, 0.5);
+}
+
+/* Iconos*/
+td img {
+    width: 3em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 0;
+    color: var(--text-primary);
+}
+
+h2 a {
+    font-style: italic;
+    font-weight: bold;
+    color: var(--text-secondary);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+/* Ajuste a otras medidas de pantalla*/
+
+@media only screen and (max-width: 768px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-me {
+        margin-right: 0;
+    }
+
+    .foto {
+        max-width: 100%;
+    }
+}
