@@ -20,9 +20,40 @@ body {
 header,
 main,
 footer {
-    padding: 20px;
+    padding: 2em;
     /*Lo siento, me niego a quitar este padding*/
     text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 0;
+    color: var(--text-primary);
+}
+
+h2 a {
+    font-style: italic;
+    font-weight: bold;
+    color: var(--text-secondary);
+}
+
+/* Centrar cualquier elemento y */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
 /* Contenedor principal */
@@ -58,10 +89,11 @@ td {
 
 th,
 td {
-    padding: 15px; /*Lo siento, me niego a quitar este padding*/
+    padding: 1.5em; /*Lo siento, me niego a quitar este padding*/
     text-align: left;
 }
 
+/* Colores de las filas*/
 tr:nth-child(odd) {
     background-color: #f2f2f2; 
 }
@@ -69,6 +101,7 @@ tr:nth-child(odd) {
 tr:nth-child(even) {
     background-color: #ddd; 
 }
+
 /* Botón de descarga */
 .download-btn {
     display: inline-block;
@@ -100,8 +133,8 @@ form {
 }
 
 input {
-    margin-bottom: 10px;
-    padding: 10px; /*Lo siento, me niego a quitar este padding*/
+    margin-bottom: 1em;
+    padding: 1em; /*Lo siento, me niego a quitar este padding*/
 }
 
 input[type="submit"] {
@@ -124,35 +157,10 @@ td img {
     width: 3em;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    letter-spacing: 0;
-    color: var(--text-primary);
-}
 
-h2 a {
-    font-style: italic;
-    font-weight: bold;
-    color: var(--text-secondary);
-}
 
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.flexContainer {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    gap: 5px;
-}
+
 
 /* Ajuste a otras medidas de pantalla*/
 
