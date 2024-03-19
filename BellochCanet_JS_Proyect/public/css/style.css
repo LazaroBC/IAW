@@ -1,0 +1,79 @@
+:root {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --text-primary: #333333D9;
+    --text-secondary: #ececec;
+    --background: #f8f8f8;
+    --bg-primary: #4d4d4d;
+    --bg-secondary: #fc0;
+}
+
+html,
+body {
+    color: var(--text-primary);
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    outline: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 0;
+    color: var(--text-primary);
+}
+
+h2 a {
+    font-style: italic;
+    font-weight: bold;
+    color: var(--text-secondary);
+}
+
+/* Centrar cualquier elemento y */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+footer {
+    padding: 2em;
+    background-color: #333;
+    color: rgb(158, 240, 162);
+}
+
+footer p {
+    text-align: center;
+}
+
+.calculadora {
+    width: 300px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+input,
+button {
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 30em;
+    width: 10rem;
+}
+
+#result {
+    margin-top: 10px;
+    font-size: 20px;
+
+}
